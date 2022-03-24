@@ -18,6 +18,10 @@
         </tr>
     </thead>
     <tbody>
+        
+        
+        {{-- <td> <a href="{{route ('movies.create') }}" class="btn btn-primary">Create a movie</a></td> --}}
+
         @foreach($movies as $movie)
         <tr>
             <td>{{ $movie->id }}</td>
@@ -33,9 +37,12 @@
                 <button class="btn btn-danger" type="submit">Delete</button>
             </form>
         </td>
+    
         </tr>
         @endforeach
     </tbody>
+
+    
 
   </table>
   <div class="pull-right"><a href="{{ route ('movies.index') }}" class="btn btn-primary">Back</a></div>
