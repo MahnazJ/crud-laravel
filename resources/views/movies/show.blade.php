@@ -1,4 +1,4 @@
-@extends('movies.layout')
+@extends('layout')
 
 @section('content')
     <div class="row">
